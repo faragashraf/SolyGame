@@ -1,0 +1,35 @@
+<!-- app.component.html -->
+
+<div class="container" (mousemove)="movePaddle($event)" >
+ <!-- dx: {{dx}}
+ <br>
+ dy: {{dy}}
+ <br>
+ paddleX: {{paddleX}}
+ <br>
+ ballX: {{ballX}}
+ <br>
+ ballY: {{ballY}}
+ <br>
+ beta: {{beta}}
+ <br>
+ alpha: {{alpha}}
+ <br>
+ gamma: {{gamma}}
+ <br> -->
+    <div class="paddle" [style.left.px]="paddleX"></div>
+    <div class="ball" [style.left.px]="ballX" [style.top.px]="ballY"></div>
+  </div>
+  <button class="btn btn-primary" style="margin: 10px;border-radius: 30px;" (click)="mySubsctription.unsubscribe();level=15;ngOnInit()">level 1</button>
+  <button class="btn btn-primary" style="margin: 10px;border-radius: 30px;"(click)="mySubsctription.unsubscribe();level=10;ngOnInit()">level 2</button>
+  <button class="btn btn-primary" style="margin: 10px;border-radius: 30px;" (click)="mySubsctription.unsubscribe();level=5;ngOnInit()">level 3</button>
+  <button class="btn " [ngClass]="{'btn-primary': mute}" 
+  [ngClass]="{'btn-success': !mute}"
+  style="margin: 3rem;border-radius: 30px;" (click)="mute=!mute" >
+<i class="bi bi-volume-mute" *ngIf="mute"></i>
+<i class="bi bi-volume-up" *ngIf="!mute"></i>
+</button>
+  <audio id="hitSound" preload="auto">
+    <source src="assets/hitSound.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>

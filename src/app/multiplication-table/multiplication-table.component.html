@@ -1,0 +1,13 @@
+<div class="game-container">
+  <!-- Game content here -->
+  <div class="back-button">
+    <button (click)="backToMenu()">العودة للقائمة الرئيسية</button>
+  </div>
+</div>
+
+<div class="question">{{ question }}</div>
+<div class="choices">
+  <div class="choice" *ngFor="let choice of choices" (click)="checkAnswer(choice)">
+    {{ choice }}
+  </div>
+</div>

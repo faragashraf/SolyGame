@@ -1,0 +1,30 @@
+/* styles.css */
+
+.container {
+  position: relative;
+  width: 90%;
+  /* Make width responsive */
+  // max-width: 500px;
+  /* Limit maximum width */
+  height: 400px;
+  /* Set height relative to width */
+ // max-height: 300px;
+  /* Limit maximum height */
+  border: 1px solid black;
+}
+
+.paddle {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 10px;
+  background-color: blue;
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
