@@ -4,11 +4,13 @@ import { MultiplicationTableComponent } from './multiplication-table/multiplicat
 import { SumGameComponent } from './sum-game/sum-game.component';
 import { MenuComponent } from './menu/menu.component';
 import { BrickBreakerComponent } from './brick-breaker/brick-breaker.component';
+import { VideoRecordingComponent } from './video-recording/video-recording.component';
 
 const routes: Routes = [
   { path: 'multiplication', component: MultiplicationTableComponent },
   { path: 'addition', component: SumGameComponent },
   { path: 'BrickBreaker', component: BrickBreakerComponent },
+  { path: 'VideoRecorfind', component: VideoRecordingComponent },
   { path: '', component: MenuComponent },
   { path: '**', redirectTo: '' } // Redirect any other route to the menu
 ];

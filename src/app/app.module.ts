@@ -11,6 +11,7 @@ import { BrickBreakerComponent } from './brick-breaker/brick-breaker.component';
 import { CommonModule } from '@angular/common';
 import { SwayDetectorComponent } from './sway-detector/sway-detector.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { VideoRecordingComponent } from './video-recording/video-recording.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SumGameComponent,
     MenuComponent,
     BrickBreakerComponent,
-    SwayDetectorComponent
+    SwayDetectorComponent,
+    VideoRecordingComponent
   ],
   imports: [
     BrowserModule,
